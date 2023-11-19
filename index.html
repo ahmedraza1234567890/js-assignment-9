@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS assignment 9</title>
+</head>
+
+<body style="font-size: larger; font-weight: bold;">
+    <script>
+        // Q :1
+        // Q: 2
+        //1.
+        var studentNames = [];
+        //                            
+        // 3.
+        var stringArray = ["Ahmed ", "Raza ", "Attari"]
+
+        // 4.
+        var numerArray = [1, 2, 3, 4, 5]
+
+        // 5.
+        var booleanArray = [true, false]
+        // 6.
+        var mixedArray = ["Raza", 1, 2, 3, true]
+        
+        //  Q :7
+        var qualification = ["Qualification <br>", "SSc   <br>", " Hsc <br>", "  BCS <br> ", "BS <br>", "  BCOM <br>", "MS <br>", " M.phil <br>", "PhD <br>"]
+        document.write(qualification);
+        
+        
+        //   Q:08
+        var studentNames = [" Ahmed   ", "Raza", "  Attari "]
+        var score = [340, 320, 360]
+        totalMarks = [500]
+        document.write("Score of Raza is" + score[0] + "   percentage is " + score[0] / totalMarks * 100 + "%"
+            + "  <br>Score of Ahmed  is" + score[1] + "    percentage is " + score[1] / totalMarks * 100 + "%" +
+            " <br>Score of Attari is" + score[2] + "    percentage is " + score[2] / totalMarks * 100 + "%")
+        
+            
+
+        //      Q: 09
+        var colorNames = [" <br>red ", " Black  ", "Blue"]
+        document.write("<p>Color Names: " + colorNames.join(", ") + "</p>");
+        
+        
+        // ( A ) 
+        var array = [" red ", "  Black  ", "  Blue"]
+        var userinp = prompt(" what color you wants to add to the beginning")
+        array.unshift(userinp)
+        document.write("  <br> This is update array " + " :  " + array)
+        
+        
+        // ( B )
+        var add = [" Red ", " Black  ", "Blue"]
+        var userinp = prompt(" what color you wants to add to the end")
+        add.push(userinp)
+        document.write("  <br> This is update array " + " :  " + add)
+        
+        
+        
+        // ( C )
+        var array = [" Red ", " Black  "]
+        array.unshift("white", "blue");
+        document.write("  <br> This is update array " + " :  " + array)
+        
+        
+        
+        // ( D )
+        var array = [" Red ", " Black  ", "white ", "Blue"]
+        array.shift()
+        document.write("  <br> This is update array " + " :  " + array)
+        
+        
+        
+        //  ( E )
+        var array = [" Red ", " Black  ", "white ", "Blue"]
+        array.pop()
+        document.write("  <br> This is update array " + " :  " + array)
+        
+        
+        
+        
+        
+        
+        // ( F )
+        var color = ["red", "white", " blue", "black"]
+        var indexName = prompt(" which index you want to add")
+        var colorName = prompt(" enrer your add color      ")
+        color.splice(indexName, 0, colorName);
+        document.write(" <h1> <br>This is updated array :  " + color + "<br>  </h1>");
+        
+        
+        
+        //      ( G )
+        var color = ["red", "white", " red", "black"]
+        var indexdlt = prompt(" which index you want to delete ");
+        var colordlt = prompt("  How many you want to delete")
+        color.splice(indexdlt, colordlt);
+        document.write(" <h1> <br>This is updated array :  " + color + "<br>  </h1>")
+        
+        
+        
+        //   Q;10
+        var score = ["320", "230", "480", "120"]
+        document.write(" <h1> <br> Score of student :  " + score + "<br>  </h1>")
+        score.sort()
+        document.write(" <h1> Ordered score of student :  " + score + "<br>  </h1>")
+
+
+
+
+        // Q :11
+        var cityNames = ["karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"]
+        document.write(" <h1> cities List :  " + cityNames + "<br>  </h1>")
+        var selectedCities = cityNames.slice(2, 5)
+        document.write(" <h1> Selected Cities List  :  " + selectedCities + "<br>  </h1>")
+      
+      
+      
+        //   "Q:12"
+        var array = ["This", "Is", "My", "Cat"];
+        var arr = array.join();
+        console.log(arr);
+      
+      
+      
+        //    Q:13
+        var fifo = ["keyboard", "Mouse", "moniner", "printer"]
+        console.log(fifo.shift());
+        console.log(fifo.shift());
+        console.log(fifo.shift());
+        console.log(fifo.shift());
+
+      
+      
+        // Q:14
+        var fifo = ["keyboard", "Mouse", "moniner", "printer"]
+
+        console.log(fifo.pop());
+        console.log(fifo.pop());
+        console.log(fifo.pop());
+        console.log(fifo.pop());
+       
+       
+        //      Q:15
+        var phoneItems = ["<br>Apple", " <br>Samsung", "  <br>  Motorola", "<br>  Nokia", "  <br>  Sony & Haier "]
+        document.write("<h1> <br> Dropdown menu :  " + phoneItems + "</h1>")
+
+
+
+    </script>
+</body>
+
+</html>
